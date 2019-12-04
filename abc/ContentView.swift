@@ -9,6 +9,7 @@
 import SwiftUI
 
 struct ContentView: View {
+    
     var body: some View {
         //Wrap in Vstack
         VStack {
@@ -23,7 +24,7 @@ struct ContentView: View {
                     
                 //new line
               
-                Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
+                Button(action: {test()}) {
                     Text("重新整理")
                 }
                 
@@ -86,4 +87,9 @@ struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
     }
+}
+
+func test() -> Void{
+    let temp = shit_stuff()
+    temp.Request_start()
 }

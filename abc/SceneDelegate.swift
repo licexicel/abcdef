@@ -33,6 +33,10 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             self.window = window
             window.makeKeyAndVisible()
         }
+        /*
+        let temp = shit_stuff()
+        temp.Request_start()
+        */
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
