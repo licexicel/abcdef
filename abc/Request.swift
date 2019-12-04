@@ -10,8 +10,20 @@ import Foundation
 
 class shit_stuff{
     
-    let rawTest = ["test_1": "omae wa mou shindeiru", "test_2": "nani?"]
+    /*
+    let rawTest = ["test_1": "omae wa mou shindeiru", "test_2": "nani?", "test_3": "black?", "test_4": "dick"]
     lazy var Response_dict = Dictionary<String, String>()
+    
+    let rawTest = [["test_1": "omae wa mou shindeiru", "test_2": "nani?"], ["test_1": "black", "test_2": "dick"]]
+    lazy var Response_dict = [Dictionary<String, String>]()
+    */
+    
+    let rawTest = [
+        ["title": "omae wa", "author": "black", "date": "2019/12/4", "content": "幹林涼"],
+        ["title": "mou shindeiru", "author": "dick", "date": "2019/12/4", "content": "老雞掰"]
+    ]
+    lazy var Response_dict = [Dictionary<String, String>]()
+    
     let Url = URL(string: "http://140.115.3.108/api/v1/board")
     
     func Request_start() -> Void {
@@ -30,13 +42,9 @@ class shit_stuff{
                     let rcv_json = try JSONSerialization.jsonObject(
                         with: Data,
                         options: .allowFragments
-                        )as! [String: String]
-                    dump(rcv_json)
-                    print("(rcv)test_1: ", rcv_json["test_1"] ?? "failed")
-                    print("(rcv)test_2: ", rcv_json["test_2"] ?? "failed")
+                        )as! [[String: String]]
                     self.Response_dict = rcv_json
                     self.print_Response()
-                    print("should be success")
                 }
                 catch{
                     print("receive failed")
@@ -49,11 +57,16 @@ class shit_stuff{
     }
     
     func print_Response() -> Void {
-        print("test1: ", self.Response_dict["test_1"] ?? "failed")
-        print("test2: ", self.Response_dict["test_2"] ?? "failed")
+        for index in 0...1{
+            print("index: ", index)
+            print("title: ", self.Response_dict[index]["title"] ?? "failed")
+            print("author: ", self.Response_dict[index]["author"] ?? "failed")
+            print("date: ", self.Response_dict[index]["date"] ?? "failed")
+            print("content: ", self.Response_dict[index]["content"] ?? "failed")
+        }
     }
     
-    func get_Response() -> Dictionary<String, String> {
+    func get_Response() -> [Dictionary<String, String>] {
         return self.Response_dict
     }
     
