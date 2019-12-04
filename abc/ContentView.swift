@@ -64,7 +64,7 @@ struct ContentView: View {
             Spacer()
             
             VStack {
-                Text("Hello World 3")
+                Text("Hello World 3幹林涼老雞掰")
                 .font(.title)
                 
             }

@@ -14,6 +14,7 @@
 		069459D7234ECB6D00CA6D17 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069459D6234ECB6D00CA6D17 /* Assets.xcassets */; };
 		069459DA234ECB6D00CA6D17 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 069459D9234ECB6D00CA6D17 /* Preview Assets.xcassets */; };
 		069459DD234ECB6D00CA6D17 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 069459DB234ECB6D00CA6D17 /* LaunchScreen.storyboard */; };
+		1A13256123978A2D00502619 /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A13256023978A2D00502619 /* Request.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		069459D9234ECB6D00CA6D17 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		069459DC234ECB6D00CA6D17 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		069459DE234ECB6D00CA6D17 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1A13256023978A2D00502619 /* Request.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Request.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 			children = (
 				069459CD234ECB6800CA6D17 /* AppDelegate.swift */,
 				069459CF234ECB6800CA6D17 /* SceneDelegate.swift */,
+				1A13256023978A2D00502619 /* Request.swift */,
 				069459D4234ECB6800CA6D17 /* ContentView.swift */,
 				069459D6234ECB6D00CA6D17 /* Assets.xcassets */,
 				069459DB234ECB6D00CA6D17 /* LaunchScreen.storyboard */,
@@ -151,6 +154,7 @@
 			files = (
 				069459D3234ECB6800CA6D17 /* abc.xcdatamodeld in Sources */,
 				069459CE234ECB6800CA6D17 /* AppDelegate.swift in Sources */,
+				1A13256123978A2D00502619 /* Request.swift in Sources */,
 				069459D5234ECB6800CA6D17 /* ContentView.swift in Sources */,
 				069459D0234ECB6800CA6D17 /* SceneDelegate.swift in Sources */,
 			);
