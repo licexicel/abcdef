@@ -10,10 +10,12 @@
 import SwiftUI
 
 struct ArticleRow: View {
+   // var article : Article
     
     var body: some View {
         HStack {
             Text("alahuagua")
+            
         }
     }
 }
@@ -25,7 +27,3 @@ struct ArticleRow_Previews: PreviewProvider {
     }
 }
 
-func testa() -> Void{
-    let tempa = shit_stuff()
-    tempa.Request_start()
-}
