@@ -30,6 +30,7 @@ struct Setting: View {
         Text(" abc")
     }
 }
+//AAAA
 struct Board: View {
    // var article : Article
     @State var val = [rawTest1, rawTest2]
